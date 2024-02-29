@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bbe0395e13.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="container mx-auto mt-4">
+    <header>
+        <div class="header-container">
+            <div class="flex justify-between">
+                <h1 class="text-4xl font-extrabold"><span class="text-red-500">PH</span>Tube</h1>
+                <p id="sort-view" class="bg-black text-white p-4 rounded-lg">Sort By view</p>
+                <button class="bg-red-500 btn px-4">Blog</button>
+            </div>
+            <hr class="mt-4 ">
+        </div>
+        <div id="btn-container" class="text-center mt-5 space-x-3">
+            <!-- <button class="btn">All</button>
+            <button class="btn">Music</button>
+            <button class="btn">Comedy</button>
+            <button class="btn">Drawing</button> -->
+        </div>
+    </header>
+    <main class="mt-10">
+        <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1200px] mx-auto gap-5">
+            <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  
+                  </div>
+                </div>
+              </div> -->
+        </div>
+        <div id="error-content" class="text-center hidden">
+            <img class="w-40 mx-auto" src="image/error.jpg" alt="">
+            <p>Opps! There are no data For This Category</p>
+        </div>
+    </main>
+
+    <script src="script/index.js"></script>
+
+    <!-- // const url = fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`)
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //         console.log(data)
+    //     }) -->
+</body>
+</html>
+
+
